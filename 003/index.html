@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>003 sample page</title>
+	<link rel="stylesheet" href="../normalize.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<article>
+		<div id="container">
+			<div id="left">
+				<h1>Site title</h1>
+				<div id="top"><div id="cTop"><a href="#">top</a></div></div>
+				<div id="one"><div id="cOne"><a href="contents1.html">contents1</a></div></div>
+				<div id="two"><div id="cTwo"><a href="contents2.html">contents2</a></div></div>
+				<div id="three"><div id="cThree"><a href="contents3.html">contents3</a></div></div>
+			</div><!-- left end-->
+			
+			<div id="right">
+				<div id="master">
+					<img src="icon.gif" alt="icon">
+				</div><!-- master end -->
+				<div id="onOff" class="prof">
+					<p>
+						name : yasumura <br>
+						from : Japan <br>
+						twitter : とかなんとか <br>
+					</p>
+				</div>
+
+			</div><!-- right end -->
+		</div><!-- container end -->
+
+	</article>
+	<aside>
+		<footer><p>Copyright yasumura 2015</p></footer>
+	</aside>
+<script>
+	
+	var btn = document.getElementById('master');
+	var prof = document.getElementById('onOff');
+
+	btn.addEventListener('click', function(){
+		prof.classList.toggle('on');
+	}, false);
+
+</script>
+</body>
+</html>

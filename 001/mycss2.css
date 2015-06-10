@@ -1,0 +1,37 @@
+/* mycss */
+
+
+#container {
+	width: 70%;
+	margin: 0 auto;
+}
+	
+
+#header {
+	background-color: red;
+}
+
+#main {
+	background-color: blue;
+	overflow: hidden;
+}
+
+#footer {
+	background-color: green;
+}
+
+
+#left {
+	background-color: purple;
+	float: left;
+	width: 200px;
+	
+}
+
+#right {
+	background-color: pink;
+	margin-left: 200px;
+}
+
+
+

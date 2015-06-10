@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>sample -- 005</title>
+	<link rel="stylesheet" href="../normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<article>
+		<div id="main">
+			<div id="kado1"></div>
+			<div id="kado2"></div>
+			<div class="post">
+				<h2 class="title">Sample page</h2>
+				<hr>
+				<span>
+					<input type="button" value="Small" id="small">
+					<input type="button" value="Middle" id="middle">
+					<input type="button" value="Large" id="large">
+				</span>
+			</div>
+			<div id="textarea" class="textMiddle">
+				<p><span>
+					Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. Sample Text. 
+				</span></p>
+				</p><span>
+					サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。サンプルです。
+				</span></p>
+			</div>
+			<p class="navi"><a href="index.html">Back</a></p>
+		</div>
+	</article>
+	<aside>
+		<footer>
+			<h3>Last update.</h3>
+			<p>2015-06-09</p>
+		</footer>
+	</aside>
+	<script>
+
+		(function(){
+			window.onload = function(){
+				document.getElementById('small').onclick = function(){
+					document.getElementById('textarea').className = 'textSmall';
+				}
+				document.getElementById('middle').onclick = function(){
+					document.getElementById('textarea').className = 'textMiddle';
+				}
+				document.getElementById('large').onclick = function(){
+					document.getElementById('textarea').className = 'textLarge';
+				}
+			}
+		})();
+
+	</script>
+</body>
+</html>
